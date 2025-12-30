@@ -1,7 +1,7 @@
 ### Step 1: Install Docker
 #### Update system
-sudo apt update
-sudo apt upgrade -y
+- sudo apt update
+- sudo apt upgrade -y
 
 #### Install Docker
 sudo apt install docker.io -y
