@@ -1,8 +1,18 @@
 ### Step 1: Install Docker
+# Update system
 sudo apt update
-sudo apt install docker.io docker-compose -y
+sudo apt upgrade -y
+
+# Install Docker
+sudo apt install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
+
+# Install Docker Compose
+sudo apt install docker-compose -y
+
+# Add user to docker group (optional)
+sudo usermod -aG docker $USER
 
 ### Step 2: Clone & Setup
 git clone <your-repo-url>
